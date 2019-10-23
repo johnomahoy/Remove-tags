@@ -6,7 +6,7 @@ if( $app->cfgCon("aa478")){
 	$groupcategory_id = $_REQUEST['groupcategory_id'];
 	
 
-	$returnFields = array('GroupName');
+	$returnFields = array('Id');
 	$contacts = $app->dsFind('ContactGroup',100,0,'GroupCategoryId',$groupcategory_id,$returnFields);
 	
 	
@@ -25,4 +25,3 @@ if( $app->cfgCon("aa478")){
 }  
 ?> 
 
-	
